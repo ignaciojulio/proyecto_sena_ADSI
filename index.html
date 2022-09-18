@@ -11,15 +11,41 @@
 </head>
 
 <body>
-    <header>
-    </header>
-    <main>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
+    <main class="main-contenedor">
+            <section class="formulario">
+            <form action="/" class="formulario-login">
+                <legend class="titulo-login">Bienvenido</legend>
+                <input type="text" placeholder="Usuario" name="Usuario" id="Usuario" class="form-input Usuario">
+                <input type="password" placeholder="Contraseña" name="password" id="password"
+                    class="form-input password">
+                <input type="submit" value="Sign In" class="form-input Sign-In">
+            </form>
+            </section>
+            <section class="recuerda_olvida_contraseña">
+                <div class="recuerda_contenedor">
+                    <input type="checkbox" id="recuerda">
+                    <label for="recuerda" class="lbl"></label>
+                    <label for="recuerda" class="lbl_recuerda">Recordar  Contraseña</label>
+                </div>
+                
+                <a href="/" class="link">Olvide contraseña</a>
+            </section>
+            <p class="separador">- inicie sesión con -</p>
+            <section class="login-items">
+                <button type="submit" value="Gmail" class="login-items-button gmail">
+                    <figure>
+                        <img src="./icons/google-icon.png">
+                        <p>Google</p>
+                    </figure> 
+                </button>
+                <button type="submit" value="outlook" class="login-items-button">
+                    <figure>
+                        <img src="./icons/outlook-icon.png">
+                        <p>Outlook</p>
+                    </figure> 
+                </button>
+            </section>
+            <a class="link registrar">- Registrarme -</a>
     </main>
 
 </body>
