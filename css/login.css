@@ -4,7 +4,7 @@
 
 :root {
     --text-color: white;
-    --subtext-color: #c4c4c4;
+    --subtext-color: #cecece;
     --fondo: #4f84b09e;
     --color-primary: #1C3879;
     --color-reaction: #33b5c9;
@@ -31,7 +31,7 @@ body {
 
 body {
     /*fondo*/
-    background: url("../imgs/fondo_login.jpg");
+    background: url("../img/fondo_login.jpg");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
