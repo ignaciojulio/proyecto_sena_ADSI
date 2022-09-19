@@ -37,11 +37,15 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    
 }
 
 .main-contenedor {
     width: 32%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--text-color);
     background-color: var(--fondo);
     padding: 20px 0;
@@ -50,64 +54,95 @@ body {
     -moz-border-radius: 3.2rem;
     -ms-border-radius: 3.2rem;
     -o-border-radius: 3.2rem;
+    font-size: 2.4rem;
     box-shadow: 5px 5px 15px 1px black;
 }
 
-h1, h3{
-    text-align: center;
-    width: 80%;
-    margin-bottom: 2rem;
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.contenedor-titulo{
-    font-size: 3rem;
+.titulo-login {
+    font-size: 3.6rem;
+    margin: 2rem;
 }
 
-.contenedor-subtitulo{
-    font-size: 1.6rem;
-    color: var(--subtext-color);
-}
-
-.botón-link {
-    border: 1px solid #ffffff3a;
-    padding: 0.4rem 16rem;
-    text-decoration: none;
+.form-input, .signup-items-button {
+    font-size: 1.8rem;
     color: var(--text-color);
+    padding: 0 20px 0 20px;
+    outline: none;
+    width: 36rem;
+    background: transparent;
+    height: 4rem;
+    border: 1px solid #ffffff3a;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    margin: 2rem;
+    background-color: #ffffff3a;
+    margin: 0.5rem;
+}
+
+.form-input:focus{
+    border-color: var(--color-reaction);
+}
+
+.form-input::placeholder {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.Regístrate , .signup-items-button{
     background-color: var(--color-primary);
+    color: var(--text-color);
     font-size: 2rem;
     cursor: pointer;
 }
 
-.botón-link:hover{
+.Regístrate:hover ,.signup-items-button:hover {
     background-color: var(--color-reaction);
 }
 
-.contenedor-imagen, .main-contenedor {
+.separador{
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-left: 4rem;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
+.signup-items-button{
+    font-size: 2.6rem;
+    width: auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.signup-items-button figure{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.imagen-img {
-    width: 40%;
+.signup-items-button img{
+    width: 30px;
+    margin-right: 8px;
 }
 
-.contenedor-reenviar{
-    font-size: 1.6rem;
-}
-
-.reenviar-link{
-    text-decoration: none;
-    color: var(--subtext-color);
-    padding-left: 12px;
-}
-
-.reenviar-link:hover{
-    color: var(--text-color);
+.tengo_cuenta{
+    margin: 2rem;
+    cursor: pointer;
 }
