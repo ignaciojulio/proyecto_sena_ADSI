@@ -31,7 +31,7 @@ body {
 
 body {
     /*fondo*/
-    background: url("../img/fondo_login.jpg");
+    background: url("../../img/fondo_login.jpg");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,49 +41,48 @@ body {
 }
 
 .main-contenedor {
-    width: 32%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
     background-color: var(--fondo);
-    padding: 20px 0;
+    padding: 2rem 0;
     border-radius: 3.2rem;
     -webkit-border-radius: 3.2rem;
     -moz-border-radius: 3.2rem;
     -ms-border-radius: 3.2rem;
     -o-border-radius: 3.2rem;
     font-size: 2.4rem;
-    box-shadow: 5px 5px 15px 1px black;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.1rem black;
 }
 
 .formulario-login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .titulo-login {
     font-size: 3.6rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .form-input, .login-items-button {
-    font-size: 1.8rem;
+    font-size: 1rem;
     color: var(--text-color);
-    padding: 0 20px 0 20px;
+    padding: 0.5rem 2rem 0 2rem;
     outline: none;
-    width: 36rem;
+    width: 100%;
     background: transparent;
     height: 4rem;
-    border: 1px solid #ffffff3a;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
+    border:0.1rem solid #ffffff3a;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
     background-color: #ffffff3a;
     margin: 0.5rem;
 }
@@ -95,13 +94,14 @@ body {
 
 .form-input::placeholder {
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    
 }
 
 .Sign-In , .login-items-button{
     background-color: var(--color-primary);
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
@@ -110,16 +110,18 @@ body {
 }
 
 .separador{
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .recuerda_olvida_contraseña {
     font-size: 1.6rem;
     margin: 1rem;
     width: auto;
+    color: white;
     display: flex;
     justify-content: space-between;
-    color: white;
+    align-items: center;
+    padding: 0 12%;
 }
 
 .recuerda_contenedor {
@@ -131,8 +133,8 @@ body {
 }
 
 .lbl {
-    width: 40px;
-    height: 20px;
+    width: 4rem;
+    height: 2rem;
     background: var(--color-primary);
     border-radius: 10rem;
     -webkit-border-radius: 10rem;
@@ -151,17 +153,17 @@ body {
 .lbl::after {
     content: '';
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 1.2rem;
+    height: 1.2rem;
     background: white;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 0.4rem;
+    left: 0.4rem;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -170,7 +172,7 @@ body {
 }
 
 #recuerda:checked+.lbl::after {
-    left: 24px;
+    left: 2.4rem;
 }
 
 #recuerda:checked+.lbl {
@@ -184,7 +186,7 @@ body {
 .link {
     color: white;
     text-decoration: none;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 .link:hover {
@@ -192,13 +194,14 @@ body {
 }
 
 .login-items-button{
-    font-size: 2.6rem;
+    padding: 0 2rem 0 2rem;
+    font-size: 50%;
     width: auto;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
 }
 
 .login-items-button figure{
@@ -207,11 +210,16 @@ body {
 }
 
 .login-items-button img{
-    width: 30px;
-    margin-right: 8px;
+    width: 2.6rem;
 }
 
+.login-items-button p{
+    margin-left: 0.4rem;
+}
+
+
 .registrar{
-    margin: 2rem;
+    margin: 1rem;
     cursor: pointer;
 }
+
