@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com");
-@import url("https://fonts.gstatic.com");
-
 :root {
     --text-color: white;
     --subtext-color: #cecece;
@@ -14,38 +10,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
 }
 
 html {
     font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
+    /*fondo*/
     width: 100vw;
     height: 100vh;
+    background: url("../../img/fondo_login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body,
+.formulario-login,
+.main-contenedor,
+.login-items,
+.recuerda_olvida_contraseña,
+.recuerda_contenedor,
+.login-items-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body {
-    /*fondo*/
-    background: url("../../img/fondo_login.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    
-}
-
 .main-contenedor {
-    width: 80%;
+    width: 80vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: var(--text-color);
     background-color: var(--fondo);
     padding: 2rem 0;
@@ -58,26 +55,26 @@ body {
     box-shadow: 0.5rem 0.5rem 1.5rem 0.1rem black;
 }
 
-.formulario-login {
-    display: flex;
+.formulario-login,
+.main-contenedor {
     flex-direction: column;
-    align-items: center;
 }
 
 .titulo-login {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     margin: 1rem;
 }
 
-.form-input, .login-items-button {
+.form-input,
+.login-items-button {
     font-size: 1rem;
     color: var(--text-color);
-    padding: 0.5rem 2rem 0 2rem;
+    padding: 0 2rem;
     outline: none;
     width: 100%;
     background: transparent;
     height: 4rem;
-    border:0.1rem solid #ffffff3a;
+    border: 0.1rem solid #ffffff3a;
     border-radius: 10rem;
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
@@ -92,43 +89,34 @@ body {
     border-color: var(--color-reaction);
 }
 
-.form-input::placeholder {
+.form-input::placeholder, .Sign-In, .login-items-button p{
+    font-family: 'Quicksand', sans-serif;
     color: var(--text-color);
     font-size: 1.6rem;
-    
 }
 
-.Sign-In , .login-items-button{
+.Sign-In,
+.login-items-button {
     background-color: var(--color-primary);
     color: var(--text-color);
-    font-size: 1.6rem;
     cursor: pointer;
 }
 
-.Sign-In:hover ,.login-items-button:hover {
+.Sign-In:hover,
+.login-items-button:hover {
     background-color: var(--color-reaction);
-}
-
-.separador{
-    margin: 1rem;
 }
 
 .recuerda_olvida_contraseña {
     font-size: 1.6rem;
     margin: 1rem;
-    width: auto;
     color: white;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 12%;
 }
 
-.recuerda_contenedor {
-    display: flex;
-}
-
 .lbl_recuerda {
+    cursor: pointer;
     padding-left: 0.5rem;
 }
 
@@ -184,6 +172,7 @@ body {
 }
 
 .link {
+    cursor: pointer;
     color: white;
     text-decoration: none;
     margin-left: 2rem;
@@ -193,10 +182,8 @@ body {
     color: var(--color-primary);
 }
 
-.login-items-button{
-    padding: 0 2rem 0 2rem;
-    font-size: 50%;
-    width: auto;
+.login-items-button {
+    padding: 0 1rem;
     border-radius: 0.4rem;
     -webkit-border-radius: 0.4rem;
     -moz-border-radius: 0.4rem;
@@ -204,22 +191,52 @@ body {
     -o-border-radius: 0.4rem;
 }
 
-.login-items-button figure{
-    display: flex;
-    align-items: center;
-}
-
-.login-items-button img{
+.login-items-button img {
     width: 2.6rem;
+    margin-right: 1rem;
 }
 
-.login-items-button p{
-    margin-left: 0.4rem;
+.registrar, .separador {
+    font-size: 2rem;
+    margin: 0.4rem;
 }
 
+@media screen and (min-width: 768px) {
+    .main-contenedor {
+        width: 60%;
+    }
 
-.registrar{
-    margin: 1rem;
-    cursor: pointer;
+    .titulo-login {
+        font-size: 6rem;
+    }
+
+    .form-input {
+        font-size: 100%;
+        height: 4rem;
+    }
+
+    .form-input::placeholder,
+    .Sign-In,
+    .login-items-button p {
+        font-size: 2rem;
+    }
+
+    .login-items-button {
+        padding: 3rem 1rem;
+    }
+
+    .login-items-button img {
+        width: 4rem;
+    }
+
+    .registrar,
+    .separador {
+        font-size: 3.2rem;
+    }
 }
 
+@media screen and (min-width: 1024px) {
+    .main-contenedor {
+        width: 40%;
+    }
+}
