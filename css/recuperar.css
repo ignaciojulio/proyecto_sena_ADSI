@@ -1,6 +1,6 @@
 :root {
     --text-color: white;
-    --subtext-color: #cecece;
+    --subtext-color: ##dfdfdf;
     --fondo: #4f84b09e;
     --color-primary: #1C3879;
     --color-reaction: #33b5c9;
@@ -103,7 +103,7 @@ body {
 }
 
 .reenviar-link:hover {
-    color: var(--text-color);
+    color: var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
