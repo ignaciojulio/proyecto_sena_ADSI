@@ -21,9 +21,8 @@
         <section class="formulario">
             <form action="/" class="formulario-login">
                 <legend class="titulo-login">Bienvenido</legend>
-                <input type="text" placeholder="Usuario" name="Usuario" id="Usuario" class="form-input Usuario">
-                <input type="password" placeholder="Contraseña" name="password" id="password"
-                    class="form-input password">
+                <input type="text" placeholder="Usuario" name="Usuario" id="Usuario" class="form-input Usuario" autocomplete required>
+                <input type="password" placeholder="Contraseña" name="password" id="password" class="form-input password" required>
                 <input type="submit" value="Sign In" class="form-input Sign-In">
             </form>
         </section>
@@ -49,6 +48,7 @@
         <a class="link registrar" href="./registrate.html">- Regístrate -</a>
     </main>
 
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
