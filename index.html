@@ -5,50 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mobile/login.css">
-    <link rel="stylesheet" href="./css/tablet/login.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="./css/desktop/login.css" media="screen and (min-width: 1024px)">
+    <!-- icono -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5812/5812102.png">
+    <!-- mobile first -->
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Bienvenido</title>
 </head>
 
 <body>
     <main class="main-contenedor">
-            <section class="formulario">
+        <section class="formulario">
             <form action="/" class="formulario-login">
                 <legend class="titulo-login">Bienvenido</legend>
-                <input type="text" placeholder="Usuario" name="Usuario" id="Usuario" class="form-input Usuario">
-                <input type="password" placeholder="Contraseña" name="password" id="password"
-                    class="form-input password">
+                <input type="text" placeholder="Usuario" name="Usuario" id="Usuario" class="form-input Usuario" autocomplete required>
+                <input type="password" placeholder="Contraseña" name="password" id="password" class="form-input password" required>
                 <input type="submit" value="Sign In" class="form-input Sign-In">
             </form>
-            </section>
-            <section class="recuerda_olvida_contraseña">
-                <div class="recuerda_contenedor">
-                    <input type="checkbox" id="recuerda">
-                    <label for="recuerda" class="lbl"></label>
-                </div>
-                <label for="recuerda" class="lbl_recuerda">Recordar  Contraseña</label>
-                <a href="../Recuperar_Contraseña.html" class="link">Recuperar Contraseña</a>
-            </section>
-            <p class="separador">- inicie sesión con -</p>
-            <section class="login-items">
-                <button type="submit" value="Gmail" class="login-items-button gmail">
-                    <figure>
-                        <img src="./icons/google-icon.png">
-                        <p>Google</p>
-                    </figure> 
-                </button>
-                <button type="submit" value="outlook" class="login-items-button">
-                    <figure>
-                        <img src="./icons/outlook-icon.png">
-                        <p>Outlook</p>
-                    </figure> 
-                </button>
-            </section>
-            <a class="link registrar" href="../registrate.html">- Regístrate -</a>
+        </section>
+        <section class="recuerda_olvida_contraseña">
+            <div class="recuerda_contenedor">
+                <input type="checkbox" id="recuerda">
+                <label for="recuerda" class="lbl"></label>
+            </div>
+            <label for="recuerda" class="lbl_recuerda">Recordar Contraseña</label>
+            <a href="./recuperar.html" class="link">Recuperar Contraseña</a>
+        </section>
+        <p class="separador">- inicie sesión con -</p>
+        <section class="login-items">
+            <button type="submit" value="Gmail" class="login-items-button gmail">
+                <img src="./icons/google-icon.png">
+                <p>Google</p>
+            </button>
+            <button type="submit" value="outlook" class="login-items-button">
+                <img src="./icons/outlook-icon.png">
+                <p>Outlook</p>
+            </button>
+        </section>
+        <a class="link registrar" href="./registrate.html">- Regístrate -</a>
     </main>
 
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

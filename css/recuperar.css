@@ -1,0 +1,139 @@
+:root {
+    --text-color: white;
+    --subtext-color: ##dfdfdf;
+    --fondo: #4f84b09e;
+    --color-primary: #1C3879;
+    --color-reaction: #33b5c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    /*fondo*/
+    width: 100vw;
+    height: 100vh;
+    background: url("https://img.freepik.com/foto-gratis/montana-fuji-lago-kawaguchiko-al-atardecer-temporadas-otono-montana-fuji-yamanachi-japon_335224-1.jpg?w=996&t=st=1664340117~exp=1664340717~hmac=bdf8ecb2fccb0571eeacda115f06c93198063563792ec27a494900c6075269df");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main-contenedor {
+    width: 80vw;
+    height: auto;
+    color: var(--text-color);
+    background-color: var(--fondo);
+    padding: 2rem 0;
+    border-radius: 3.2rem;
+    -webkit-border-radius: 3.2rem;
+    -moz-border-radius: 3.2rem;
+    -ms-border-radius: 3.2rem;
+    -o-border-radius: 3.2rem;
+    font-size: 2.4rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.1rem black;
+    text-align: center;
+}
+
+
+.contenedor-titulo {
+    font-size: 2.6rem;
+    margin: 1rem;
+}
+
+.contenedor-subtitulo {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+    margin: 1rem;
+}
+
+.botón-link {
+    border: 1px solid #ffffff3a;
+    padding: 0.4rem 1.6rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    background-color: var(--color-primary);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.botón-link:hover {
+    background-color: var(--color-reaction);
+}
+
+.imagen-img {
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.contenedor-reenviar {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.reenviar-link {
+    text-decoration: none;
+    color: var(--subtext-color);
+}
+
+.reenviar-link:hover {
+    color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-titulo {
+        font-size: 4rem;
+    }
+
+    .contenedor-subtitulo {
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .imagen-img {
+        margin-bottom: 2rem;
+        width: 28%;
+    }
+
+    .botón-link {
+        padding: 0.4rem 8rem;
+        font-size: 2.4rem;
+    }
+
+    .contenedor-reenviar {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main-contenedor {
+        width: 50%;
+    }
+}
