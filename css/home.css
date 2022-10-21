@@ -122,9 +122,10 @@ main{
 footer {
     border-top: 1px solid grey ;
     padding-top: 1rem;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: white;
 }
 
 .content_footer {
