@@ -32,6 +32,7 @@ html {
 .header-content_nav {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid grey ;
 }
 
 .content_navbar_item img {
@@ -49,6 +50,12 @@ html {
 
 
 /* Product List */
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 140px);
@@ -113,7 +120,9 @@ html {
 /* footer area */
 
 footer {
-    position: absolute;
+    border-top: 1px solid grey ;
+    padding-top: 1rem;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
