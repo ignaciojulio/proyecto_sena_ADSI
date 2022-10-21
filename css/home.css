@@ -1,0 +1,134 @@
+/* General */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #4edb61;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--lg);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.inactive {
+    display: none;
+}
+
+/* header area */
+
+.header-content_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_navbar_item img {
+    width: 2rem;
+}
+
+.content_navbar_item figure {
+    padding: 1rem;
+}
+
+.content_navbar_item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Product List */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 26px;
+    place-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-card .product-info figure {
+    margin: 0;
+}
+
+.product-card .product-info figure img {
+    border-radius: 0;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.product-card .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-card .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+
+/* footer area */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content_footer_item {
+    text-align: center;
+}
+
+.content_footer img {
+    width: 2rem;
+}
