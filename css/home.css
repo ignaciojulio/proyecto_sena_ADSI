@@ -1,20 +1,32 @@
 /* General */
 :root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --very-light-pink: #C7C7C7;
-    --text-input-field: #F7F7F7;
-    --hospital-green: #4edb61;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+    /* fonts */
+    --font-quicksand: Quicksand;
+    --font-open-sans: "Open Sans";
+
+    /* font sizes */
+    --font-size-base: 16px;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-gray-100: #f4f4f4;
+    --color-gray-200: #7c7c7a;
+
+    /* Gaps */
+    --gap-md: 16px;
+
+    /* Paddings */
+    --padding-sm: 14px;
+    --padding-md: 16px;
+
+    /* border radiuses */
+    --br-md: 8px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: var(--lg);
 }
 
 html {
@@ -22,6 +34,9 @@ html {
     font-family: 'Quicksand', sans-serif;
 }
 
+body {
+    line-height: normal;
+}
 
 .inactive {
     display: none;
@@ -29,10 +44,24 @@ html {
 
 /* header area */
 
+/* sección header principal */
+
 .header-content_nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey ;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.button_menu-item{
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
 }
 
 .content_navbar_item img {
@@ -48,20 +77,192 @@ html {
     align-items: center;
 }
 
+/* sección menu mobile */
 
+.menu-content {
+    box-shadow: 10px 0px 24px var(--color-gray-200);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    height: 100vh;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: #000;
+    font-family: var(--font-quicksand);
+    background-color: var(--color-white);
+}
+
+.menu-content-header-div {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 280px;
+    height: 187px;
+}
+
+.button-close {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 12.83%;
+    width: 8.57%;
+    top: 0;
+    right: 0;
+    bottom: 87.17%;
+    left: 91.43%;
+}
+
+.img-user-icon {
+    position: absolute;
+    height: 42.78%;
+    width: 28.57%;
+    top: 12.83%;
+    right: 71.43%;
+    bottom: 44.39%;
+    left: 0;
+    border-radius: var(--br-md);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    -webkit-border-radius: var(--br-md);
+    -moz-border-radius: var(--br-md);
+    -ms-border-radius: var(--br-md);
+    -o-border-radius: var(--br-md);
+}
+
+.name-user {
+    height: 10.7%;
+    width: 54.64%;
+    top: 18.18%;
+    right: 11.07%;
+    bottom: 71.12%;
+    font-weight: 600;
+}
+
+.email-user,
+.name-user {
+    position: absolute;
+    left: 34.29%;
+    display: inline-block;
+}
+
+.email-user {
+    height: 8.02%;
+    width: 58.21%;
+    top: 30.48%;
+    right: 7.5%;
+    bottom: 61.5%;
+    font-size: 12px;
+    color: #7e7e7e;
+}
+
+.input-buscar {
+    border: 1px solid #bbb;
+    background-color: var(--color-white);
+    height: 26.74%;
+    width: 98.93%;
+    top: 73.26%;
+    right: 0.71%;
+    bottom: 0;
+    left: 0.36%;
+    border-radius: var(--br-md);
+    box-sizing: border-box;
+    padding: 13px var(--padding-md);
+    justify-content: center;
+}
+
+.input-buscar:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-buscar:focus {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-buscar,
+.menu-content-nav-options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-content-nav-options {
+    top: 283px;
+    left: 17px;
+    width: 276px;
+    justify-content: flex-start;
+    gap: var(--gap-md);
+}
+
+.nav-options_items {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-sm) var(--padding-md);
+    background-color: transparent;
+    border-radius: var(--br-md);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-border-radius: var(--br-md);
+    -moz-border-radius: var(--br-md);
+    -ms-border-radius: var(--br-md);
+    -o-border-radius: var(--br-md);
+}
+
+.nav-options_items:active,
+.nav-options_items:hover {
+    background-color: var(--color-gray-100);
+}
+
+.items_content-div {
+    text-decoration: none;
+    width: 186px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-md);
+    
+}
+
+.nav-options_items-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-options_items-text {
+    font-size: var(--font-size-base);
+    line-height: 140%;
+    font-weight: 600;
+    font-family: var(--font-open-sans);
+    color: var(--color-gray-200);
+    text-align: left;
+    display: inline-block;
+    width: 146px;
+}
+
+/* main area */
 /* Product List */
 
-main{
+main {
     width: 100%;
     height: 100%;
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 140px);
-    gap: 26px;
+    grid-template-columns: repeat(auto-fill, 14rem);
+    gap: 2.6rem;
     place-content: center;
-    margin-top: 20px;
+    margin: 5rem 0;
 }
 
 .product-card {
@@ -94,8 +295,8 @@ main{
 
 .product-card .product-info figure img {
     border-radius: 0;
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -120,25 +321,41 @@ main{
 /* footer area */
 
 footer {
-    border-top: 1px solid grey ;
-    padding-top: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    border-top: 1px solid grey;
     background-color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 .content_footer {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.content_footer_item {
-    text-align: center;
 }
 
 .content_footer img {
     width: 2rem;
 }
+
+.content_footer_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: 0;
+}
+
+.footer_nav-linea_decorativa{
+    width: 49px;
+    height: 4px;
+    margin-top: auto;
+    background: transparent ;
+    border-radius: 3px 3px 0 0;
+    background: #009ef4;
+}
+
+.present_position{
+    color: #009ef4;
+}
+

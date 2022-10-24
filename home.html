@@ -14,38 +14,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>home</title>
-
 </head>
 
 <body>
     <header>
         <nav class="header-content_nav">
-            <section class="navbar_left content_navbar_item">
-                <figure class="navbar_left-content_menu">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3945/3945664.png" class="content_menu-img">
-                    <!-- <img src="" alt="menu"> -->
-                </figure>
+            <section class="button_menu_content content_navbar_item">
+                <button class="button_menu-item">
+                    <figure>
+                        <img src="./icons/menu_hamburgesa.svg" class="content_menu-img">
+                    </figure>
+                </button>
             </section>
 
             <section class="navbar_center content_navbar_item">
-                <figure class="navbar_left-content_logo">
+                <figure class="navbar_center-content_logo">
                     <img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" class="logo_content-img">
-                    <!-- <img src="" alt="logo"> -->
                 </figure>
-                <h1 id="titulo" class="navbar_left-content_titulo">titulo</h1>
+                <h1 class="navbar_center-content_titulo">titulo</h1>
             </section>
-            
-            
+
+
             <section class="navbar_right content_navbar_item">
                 <figure class="navbar_right-content_buscar">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2311/2311526.png" alt="buscar" class="content_buscar-img">
-                    <!-- <img src="" alt="buscar"> -->
+                    <img src="./icons/buscar.svg" alt="buscar" class="content_buscar-img">
                 </figure>
                 <figure class="navbar_right-content_refrescar">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5392/5392736.png" alt="refrescar" class="content_refrescar-img">
-                    <!-- <img src="" alt="refrescar"> -->
+                    <img src="./icons/refrescar.svg" alt="refrescar" class="content_refrescar-img">
                 </figure>
             </section>
+        </nav>
+
+        <nav class="menu-content inactive">
+            <header class="menu-content-header-div">
+                <button class="button-close">
+                    <img alt="button_close" src="./icons/menu-icons/icon_button_close.svg" />
+                </button>
+                <img class="img-user-icon" alt="imagen_usuario" src="./icons/img_user.png" />
+                <span class="name-user">Ignacio Julio</span>
+                <span class="email-user">ignacio9876.ijjp@gmail.com</span>
+                <input class="input-buscar" type="text" placeholder="Search..." />
+            </header>
+            <nav class="menu-content-nav-options">
+                <button class="button-notificaciones nav-options_items">
+                    <div class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="./icons/menu-icons/icon_notificaciones.svg" />
+                        <span class="nav-options_items-text">Notificaciones</span>
+                    </div>
+                </button>
+                <button class="button-productos nav-options_items">
+                    <div class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="./icons/menu-icons/icon_productos.svg" />
+                        <span class="nav-options_items-text">Productos</span>
+                    </div>
+                </button>
+                <button class="button-inventario nav-options_items">
+                    <div class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="./icons/menu-icons/icon-inventario.svg" />
+                        <span class="nav-options_items-text">Inventario</span>
+                    </div>
+                </button>
+                <button class="button-notificaciones nav-options_items">
+                    <div class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="icons/menu-icons/icon_notificaciones.svg" />
+                        <span class="nav-options_items-text">Analítica</span>
+                    </div>
+                </button>
+                <button class="button-ajustes-div nav-options_items">
+                    <div class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="icons/menu-icons/icon_ajustes.svg" />
+                        <span class="nav-options_items-text">Ajustes</span>
+                    </div>
+                </button>
+                <button class="button-cerrar-sesion nav-options_items">
+                    <a href="./index.html" class="items_content-div">
+                        <img class="nav-options_items-icon" alt="" src="icons/menu-icons/icon_salir.svg" />
+                        <span class="nav-options_items-text">Log-out</span>
+                    </a>
+                </button>
+            </nav>
         </nav>
     </header>
 
@@ -72,21 +119,23 @@
 
     <footer>
         <nav class="content_footer">
-            <figure class="content_footer-content_items content_footer_item">
+            <button class="content_footer-content_items content_footer_item">
                 <img src="https://cdn-icons-png.flaticon.com/512/645/645652.png" class="content_items-img">
-                <!-- <img src="" alt="items"> -->
-                <h1 class="content_items-titulo">Items</h1>
-            </figure>
-            <figure class="content_footer-content_inventory content_footer_item">
+                <span class="content_items-titulo present_position">Productos</span>
+                <div class="footer_nav-linea_decorativa "></div>
+            </button>
+            <button class="content_footer-content_inventory content_footer_item">
                 <img src="https://cdn-icons-png.flaticon.com/512/4133/4133479.png" class="content_inventory-img">
                 <!-- <img src="" alt="inventario"> -->
-                <h1 class="content_inventory-titulo">Inventory</h1>
-            </figure>
-            <figure class="content_footer-content_levels content_footer_item">
+                <span class="content_inventory-titulo present_position">Inventario</span>
+                <div class="footer_nav-linea_decorativa inactive"></div>
+            </button>
+            <button class="content_footer-content_levels content_footer_item">
                 <img src="https://cdn-icons-png.flaticon.com/512/8352/8352720.png" class="content_levels-img">
                 <!-- <img src="" alt="levels"> -->
-                <h1 class="content_levels-titulo">Levels</h1>
-            </figure>
+                <span class="content_levels-titulo present_position">Estadísticas</span>
+                <div class="footer_nav-linea_decorativa inactive"></div>
+            </button>
         </nav>
     </footer>
 
