@@ -21,8 +21,10 @@
     --color-gray-100: #f4f4f4;
     --color-gray-200: #d9dce0;
     --color-gray-300: #bbb;
+    --color-gray-400: #afafaf;
+    --color-gray-500: #757575;
+    --colo-gray-600: #545454;
     --light-subtext: #7c7c7a;
-    --gray-600: #545454;
     --background-50: rgba(255, 255, 255, 0.5);
     --secondary-blue: #276ef1;
 
@@ -58,10 +60,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    
+
 }
 
-main{
+main,
+footer {
     margin: 0 2.4rem;
 }
 
@@ -104,24 +107,90 @@ main{
     margin: 1rem 0;
     font-weight: 500;
     font-size: 1.4rem;
-    color: var(--gray-600);
+    color: var(--colo-gray-600);
     text-decoration: none;
     align-self: flex-end;
 }
 
-.formulario_enviar {
+.formulario_enviar,
+.API_login-botón,
+.footer-boton_registro {
     color: var(--primary-white);
     background-color: var(--primary-black);
     border: none;
 }
 
 .formulario_enviar,
-.formulario_input {
+.formulario_input,
+.API_login-botón,
+.footer-boton_registro {
     padding: 1.5rem;
     margin: 1rem 0;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: var(--br-md);
+    -webkit-border-radius: var(--br-md);
+    -moz-border-radius: var(--br-md);
+    -ms-border-radius: var(--br-md);
+    -o-border-radius: var(--br-md);
+}
+
+.main-content_API_login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.API_login-separadores {
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--colo-gray-600);
+    border-radius: var(--br-md);
+    -webkit-border-radius: var(--br-md);
+    -moz-border-radius: var(--br-md);
+    -ms-border-radius: var(--br-md);
+    -o-border-radius: var(--br-md);
+}
+
+.API_login-titulo {
+    font-family: var(--font-Inter);
+    font-weight: var(--p-font-weight-semibold);
+    color: var(--colo-gray-600);
+}
+
+.API_login-botón {
+    margin: 1rem auto;
+    padding: 1.5rem 4rem;
+
+}
+
+.API_login-botón img {
+    width: 2rem;
+    height: 2.7rem;
+}
+
+.content_footer {
+    margin: 2.4rem auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-boton_registro {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.registro_primera_frese {
+    margin-right: 1rem;
+    color: var(--color-gray-500);
+}
+
+@media screen and (min-width: 330px) {
+    .content_footer {
+        margin: 2.4rem auto;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+    }
 }
