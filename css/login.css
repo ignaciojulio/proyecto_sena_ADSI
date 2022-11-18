@@ -1,243 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Urbanist:wght@400;500;600;700&display=swap');
+
 :root {
-    --text-color: white;
-    --subtext-color: #cecece;
-    --fondo: #4f84b09e;
-    --color-primary: #1C3879;
-    --color-reaction: #33b5c9;
+    /* fonts */
+    --font-Urbanist: 'Urbanist', sans-serif;
+    --font-open-sans: "Open Sans";
+    --font-Inter: "Inter";
+
+
+    /* font sizes */
+    --font-size-2xs: 12px;
+    --font-size-xs: 14px;
+    --font-size-sm: 15px;
+    --font-size-base: 16px;
+    --font-size-lg: 17px;
+    --font-size-xl: 24px;
+
+    /* Colors */
+    --primary-black: #000;
+    --primary-white: #fff;
+    --color-gray-100: #f4f4f4;
+    --color-gray-200: #d9dce0;
+    --color-gray-300: #bbb;
+    --light-subtext: #7c7c7a;
+    --gray-600: #545454;
+    --background-50: rgba(255, 255, 255, 0.5);
+    --secondary-blue: #276ef1;
+
+    /* Gaps */
+    --gap-md: 16px;
+
+    /* Paddings */
+    --padding-sm: 13px;
+    --padding-md: 14px;
+    --padding-lg: 16px;
+
+    /* border radiuses */
+    --br-md: 8px;
 }
 
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--font-Urbanist);
+    overflow-x: hidden;
 }
 
 html {
     font-size: 62.5%;
-    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     /*fondo*/
     width: 100vw;
     height: 100vh;
-    background: url("https://img.freepik.com/foto-gratis/montana-fuji-lago-kawaguchiko-al-atardecer-temporadas-otono-montana-fuji-yamanachi-japon_335224-1.jpg?w=996&t=st=1664340117~exp=1664340717~hmac=bdf8ecb2fccb0571eeacda115f06c93198063563792ec27a494900c6075269df");
+    background: url("https://images.pexels.com/photos/3685207/pexels-photo-3685207.jpeg?cs=srgb&dl=pexels-mitchell-luo-3685207.jpg&fm=jpg&_gl=1*rpk464*_ga*NDg0NzQ2OTQwLjE2Njc2OTIzNjA.*_ga_8JE65Q40S6*MTY2ODc1ODUwMy4zLjEuMTY2ODc1ODY1Ny4wLjAuMA..");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    
 }
 
-body,
-.formulario-login,
-.main-contenedor,
-.login-items,
-.recuerda_olvida_contraseña,
-.recuerda_contenedor,
-.login-items-button {
+main{
+    margin: 0 2.4rem;
+}
+
+.content-titulo {
+    width: 31.2rem;
+    height: 9.2rem;
+    margin: 4rem 2.4rem 4rem 2.4rem;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.main-content_formulario {
+    margin: 0 auto;
+    width: auto;
+    height: 24.7rem;
+}
+
+.formulario {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-contenedor {
-    width: 80vw;
-    height: auto;
-    color: var(--text-color);
-    background-color: var(--fondo);
-    padding: 2rem 0;
-    border-radius: 3.2rem;
-    -webkit-border-radius: 3.2rem;
-    -moz-border-radius: 3.2rem;
-    -ms-border-radius: 3.2rem;
-    -o-border-radius: 3.2rem;
-    font-size: 2.4rem;
-    box-shadow: 0.5rem 0.5rem 1.5rem 0.1rem black;
-}
-
-.formulario-login,
-.main-contenedor {
     flex-direction: column;
+    align-items: stretch;
 }
 
-.titulo-login {
-    font-size: 2.6rem;
-    margin: 1rem;
+.formulario_input {
+    background-color: var(--background-50);
+    border: solid 2px var(--primary-white);
+
 }
 
-.form-input,
-.login-items-button {
-    font-size: 1rem;
-    color: var(--text-color);
-    padding: 0 2rem;
-    outline: none;
-    width: 100%;
-    background: transparent;
-    height: 4rem;
-    border: 0.1rem solid #ffffff3a;
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    background-color: #ffffff3a;
-    margin: 0.5rem;
+.formulario_input::placeholder {
+    font-family: var(--font-Urbanist);
+    font-weight: var(--p-font-weight-semibold);
+    color: var(--primary-black);
 }
 
-.Usuario:focus,
-.password:focus {
-    border-color: var(--color-reaction);
-}
-
-.form-input::placeholder, .Sign-In, .login-items-button p{
-    font-family: 'Quicksand', sans-serif;
-    color: var(--text-color);
-    font-size: 1.6rem;
-}
-
-.Sign-In,
-.login-items-button {
-    background-color: var(--color-primary);
-    color: var(--text-color);
-    cursor: pointer;
+.formulario a {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--gray-600);
     text-decoration: none;
+    align-self: flex-end;
 }
 
-.Sign-In:hover,
-.login-items-button:hover {
-    background-color: var(--color-reaction);
+.formulario_enviar {
+    color: var(--primary-white);
+    background-color: var(--primary-black);
+    border: none;
 }
 
-.recuerda_olvida_contraseña {
-    font-size: 1.6rem;
-    margin: 1rem;
-    color: white;
-    justify-content: space-between;
-    padding: 0 12%;
-}
-
-.lbl_recuerda {
-    cursor: pointer;
-    padding-left: 0.5rem;
-}
-
-.lbl {
-    width: 4rem;
-    height: 2rem;
-    background: var(--color-primary);
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    cursor: pointer;
-    position: relative;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-}
-
-.lbl::after {
-    content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: white;
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    position: absolute;
-    top: 0.4rem;
-    left: 0.4rem;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-}
-
-#recuerda:checked+.lbl::after {
-    left: 2.4rem;
-}
-
-#recuerda:checked+.lbl {
-    background: var(--color-reaction);
-}
-
-#recuerda {
-    display: none;
-}
-
-.link {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    margin-left: 2rem;
-}
-
-.link:hover {
-    color: var(--color-primary);
-}
-
-.login-items-button {
-    padding: 0 1rem;
-    border-radius: 0.4rem;
-    -webkit-border-radius: 0.4rem;
-    -moz-border-radius: 0.4rem;
-    -ms-border-radius: 0.4rem;
-    -o-border-radius: 0.4rem;
-}
-
-.login-items-button img {
-    width: 2.6rem;
-    margin-right: 1rem;
-}
-
-.registrar, .separador {
-    font-size: 2rem;
-    margin: 0.4rem;
-}
-
-@media screen and (min-width: 768px) {
-    .main-contenedor {
-        width: 60%;
-    }
-
-    .titulo-login {
-        font-size: 6rem;
-    }
-
-    .form-input {
-        font-size: 100%;
-        height: 4rem;
-    }
-
-    .form-input::placeholder,
-    .Sign-In,
-    .login-items-button p {
-        font-size: 2rem;
-    }
-
-    .login-items-button {
-        padding: 3rem 1rem;
-    }
-
-    .login-items-button img {
-        width: 4rem;
-    }
-
-    .registrar,
-    .separador {
-        font-size: 3.2rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .main-contenedor {
-        width: 40%;
-    }
+.formulario_enviar,
+.formulario_input {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }

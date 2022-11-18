@@ -6,20 +6,15 @@ const menuContent = document.querySelector('.menu-content');
 const buttonMenu = document.querySelector('.button_menu-item');
 const buttonCloseMenu = document.querySelector('.button-close');
 // selectores de posición
-// botones
 const buttonItems = document.querySelector('.content_footer-content_items');
 const buttonInventario = document.querySelector('.content_footer-content_inventory');
 const buttonEstadísticas = document.querySelector('.content_footer-content_levels');
-const presentPosition = document.querySelector('.present_position');
-// 
 
 /* Agregar un detector de eventos */
 // menu
-buttonMenu.addEventListener('click', cambio => toggleElement(menuContent,'transición'));
-buttonCloseMenu.addEventListener('click', cambio => toggleElement(menuContent,'transición'));
-
-
-
+buttonMenu.addEventListener('click', cambio => toggleElement(menuContent, 'transición'));
+buttonCloseMenu.addEventListener('click', cambio => toggleElement(menuContent, 'transición'));
+buttonCloseMenu.af
 // footer
 buttonItems.addEventListener('click', selección => { positionSelectors('Items') });
 buttonInventario.addEventListener('click', selección => { positionSelectors('Inventario') });
@@ -61,8 +56,8 @@ function positionSelectors(selección) {
 };
 
 
-function toggleElement(elemento,propiedad) {
-        elemento.classList.toggle(propiedad);
+function toggleElement(elemento, propiedad) {
+    elemento.classList.toggle(propiedad);
 };
 
 // area productos
