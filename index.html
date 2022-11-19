@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icono -->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5812/5812102.png">
+    <link rel="icon" href="./icons/logo.svg">
     <!-- mobile first -->
     <link rel="stylesheet" href="./css/login.css">
     <!-- fonts google -->
@@ -17,40 +17,90 @@
 </head>
 
 <body>
-    <header>
-        <div class="content-titulo">
-            <h1 class="titulo">¡Bienvenido de nuevo! <br> Por favor, identifíquese para tener acceso.</h1>
-        </div>
-    </header>
-    <main>
-        <section class="main-content_formulario">
-            <form action="/" class="formulario">
-                <input type="text" placeholder="Email/Cédula" class="formulario_input input_email">
-                <input type="password" name="" id="" placeholder="Contraseña" class="formulario_input input_contraseña">
-                <a href=".">¿Ha olvidado su contraseña?</a>
-                <button class="formulario_enviar">Iniciar Sesión</button>
-            </form>
-        </section>
-        <section class="main-content_API_login">
-            <div class="API_login-separadores"></div>
-            <h2 class="API_login-titulo"> O bien, inicie sesión con</h2>
-            <div class="API_login-separadores"></div>
-        </section>
-        <section class="main-content_API_login">
-            <button class="API_login-botón facebook_boton"><img src="./icons/api_icons/facebook.svg"
-                    alt="logo Facebook"></button>
-            <button class="API_login-botón google_boton"><img src="./icons/api_icons/google.svg"
-                    alt="logo google"></button>
-            <button class="API_login-botón apple_boton"><img src="./icons/api_icons/apple.svg"
-                    alt="logo apple"></button>
-        </section>
-    </main>
-    <footer class="content_footer">
-        <button class="footer-boton_registro">
-            <div class="registro_primera_frese">¿No tiene una cuenta? </div>
-            <div class="registro_segunda_frase">Regístrate ahora</div>
-        </button>
-    </footer>
+    <div class="content_login ">
+        <header>
+            <div class="content-titulo">
+                <h1 class="titulo">¡Bienvenido de nuevo! <br> Por favor, identifíquese para tener acceso.</h1>
+            </div>
+        </header>
+        <main class="main_login">
+            <section class="main-content_formulario">
+                <form action="/" class="formulario">
+                    <input type="text" placeholder="Email/Cédula" class="formulario_input input_email">
+                    <input type="password" name="" id="" placeholder="Contraseña"
+                        class="formulario_input input_contraseña">
+                    <p class="restablecer">¿Ha olvidado su contraseña?</p>
+                    <button class="formulario_enviar">Iniciar Sesión</button>
+                </form>
+            </section>
+            <section class="main-content_API_login">
+                <div class="API_login-separadores"></div>
+                <h2 class="API_login-titulo"> O bien, inicie sesión con</h2>
+                <div class="API_login-separadores"></div>
+            </section>
+            <section class="main-content_API_login">
+                <button class="API_login-botón facebook_boton"><img src="./icons/api_icons/facebook.svg"
+                        alt="logo Facebook"></button>
+                <button class="API_login-botón google_boton"><img src="./icons/api_icons/google.svg"
+                        alt="logo google"></button>
+                <button class="API_login-botón apple_boton"><img src="./icons/api_icons/apple.svg"
+                        alt="logo apple"></button>
+            </section>
+        </main>
+        <footer class="content_footer">
+            <button class="footer-botón">
+                <div class="primera_frese">¿No tiene una cuenta? </div>
+                <div class="segunda_frase">Regístrate ahora</div>
+            </button>
+        </footer>
+    </div>
+
+    <div class="content_registro inactive">
+        <header>
+            <button class="formulario_enviar botón_atrás"> <img src="./icons/boton_atras.svg"
+                    alt="botón atrás"></button>
+            <div class="content-titulo titulo_registro">
+                <h1 class="titulo">¡Bienvenido! <br> Nos alegra que seas parte de la familia</h1>
+            </div>
+        </header>
+        <main class="main_registro">
+            <section class="main-content_formulario main-content_formulario-registro">
+                <form action="/" class="formulario formulario-registro">
+                    <input type="text" placeholder="Nombres" class="formulario_input input_Nombres">
+                    <input type="text" placeholder="Apellidos" class="formulario_input input_Apellidos">
+                    <input type="text" placeholder="Cédula" class="formulario_input input_Cedula">
+                    <input type="text" placeholder="Email" class="formulario_input input_email">
+                    <input type="password" name="" id="" placeholder="Contraseña"
+                        class="formulario_input input_contraseña">
+                    <input type="password" name="" id="" placeholder="Confirmar Contraseña"
+                        class="formulario_input input_Confirmar Contraseña">
+                    <button class="formulario_enviar formulario_enviar-registro">Registrarse</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div class="content_restablecer inactive">
+        <header>
+            <button class="formulario_enviar botón_atrás botón_atrás_restablecer"> <img src="./icons/boton_atras.svg"
+                    alt="botón atrás"></button>
+            <div class="content-titulo">
+                <h1 class="titulo titulo_restablecer">¡Tranquilo! <br> revisa tu correo, encontrarás una forma de poder
+                    recuperar tu contraseña.</h1>
+            </div>
+        </header>
+        <main>
+            <button class="footer-botón botón_reenviar">
+                <div class="primera_frese">¿No te llego? </div>
+                <div class="segunda_frase">Reenvía la solicitud.</div>
+            </button>
+        </main>
+        <footer>
+            <h2 class="footer_subtitulo">Si no te llega por algún motivo habla con el administrador del sistema</h2>
+        </footer>
+    </div>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
