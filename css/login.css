@@ -236,3 +236,7 @@ footer {
     font-size: 2.4rem;
     color: var(--colo-gray-600);
 }
+
+.footer-botón, .API_login-botón, .restablecer, .formulario_enviar {
+    cursor:pointer; cursor: han
+}
