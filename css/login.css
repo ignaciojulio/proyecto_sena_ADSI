@@ -47,6 +47,7 @@ todos los elementos. */
     margin: 0;
     font-family: var(--font-Urbanist);
     overflow-x: hidden;
+    box-sizing: content-box;
 }
 
 /* Establecer el tamaño de fuente predeterminado al 62,5 % del tamaño de fuente predeterminado. */
@@ -69,6 +70,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+
 }
 
 /* login */
@@ -198,15 +200,6 @@ footer {
     color: var(--color-gray-500);
 }
 
-@media screen and (min-width: 330px) {
-    .content_footer {
-        margin: 2.4rem auto;
-        width: 100%;
-        bottom: 0;
-        position: absolute;
-    }
-}
-
 /* registro */
 
 .botón_atrás {
@@ -237,6 +230,25 @@ footer {
     color: var(--colo-gray-600);
 }
 
-.footer-botón, .API_login-botón, .restablecer, .formulario_enviar {
-    cursor:pointer; cursor: han
+.footer-botón,
+.API_login-botón,
+.restablecer,
+.formulario_enviar {
+    cursor: pointer;
+    cursor: han
+}
+
+/* tabletas , */
+@media (min-width: 768px) {
+    .content_login, .content_registro, .content_restablecer {
+        width: 50rem;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .content_login, .content_registro, .content_restablecer {
+        width: 40rem;
+        margin: auto;
+    }
 }
